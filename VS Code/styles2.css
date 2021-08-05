@@ -1,0 +1,947 @@
+#a{
+  position: absolute;
+ top: 5%;
+ height: 100px;
+ width: 70px;
+ left:-95px;
+}
+#b{
+  position: absolute;
+ top: 5%;
+ height: 100px;
+ width: 80px;
+ right:-92px;
+}
+#c{
+    position: absolute;
+ height: 120px;
+ width: 90px;
+ left:-100px;
+ top: 72% ;
+}
+#d{
+   position: absolute;
+    top: 52%;
+ height: 120px;
+ width: 90px;
+ right:-100px;
+}
+#e{
+   position: absolute;
+    top: 92%;
+ height: 120px;
+ width: 90px;
+ right:-100px;
+}
+#p{
+  font-size: 15px;
+  height: 320px;
+  background-color: bisque;
+  border: 5px solid green;
+  border-top: 10%;
+  position: absolute;
+  width:70px;
+  left: -100px;
+  top :10%;
+  
+}
+#p i{
+ font-size: 2rem;
+}
+#know-your-dog{
+ font-size: 15px;
+  height: 350px;
+  
+  background-color: bisque;
+  border: 5px solid green;
+  position: absolute;
+  width:70px;
+  right: -100px;
+  top :10%; 
+}
+#right-corner{
+font-size: 15px;
+  height: 280px;
+  background-color: bisque;
+  border: 5px solid green;
+  border-top: 10%;
+  position: absolute;
+  width:70px;
+  right: -100px;
+  top :60%;
+}
+#left-corner{
+font-size: 15px;
+  height: 320px;
+  background-color: bisque;
+  border: 5px solid green;
+  border-top: 10%;
+  position: absolute;
+  width:70px;
+ left: -100px;
+  top :60%;
+}
+#logo{
+  position: relative;
+  margin-top: -9px;
+  margin-right: -10px;
+  margin-left: -10px;
+  width:auto;
+height: 255px;
+text-align: center;
+background:linear-gradient(-45deg,rgb(248, 229, 153), rgb(236, 122, 118),rgb(243, 241, 239),rgb(231, 88, 16));
+background-size: 200%;
+animation: gradient 7s linear infinite;
+}
+@keyframes gradient{
+  0%{
+    background-position:0 50% ;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position:0 100%;
+  }
+}
+#dogs{
+   position: relative;
+ height: 1700px;  
+text-align: center;
+margin-left: 112px;
+margin-right: 112px;
+background:linear-gradient(-45deg,rgb(248, 229, 153) , rgb(58, 56, 56),rgb(243,241,239),rgb(243, 241, 239),rgb(231, 176, 106));
+background-size: 200% ;
+animation:change 7s ease-in-out infinite;
+}
+@keyframes change{
+  0%{
+    background-position:0 50% ;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position:0 100%;
+  }
+}
+#labrador{
+position: absolute; 
+top: 4%;
+right: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(labrador.png);
+background-size: cover;  
+cursor: pointer;
+border-radius: 40px;
+}
+#labrador::before,
+#labrador::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#labrador::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#labrador:hover::before
+{
+--scale:1;
+
+}
+
+#german{
+position: absolute; 
+top: 4%;
+left: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(germannn.png); 
+background-size: cover;
+cursor: pointer;
+border-radius: 40px;
+}
+#german::before,
+#german::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#german::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#german:hover::before
+{
+--scale:1;
+}
+#husky{
+position: absolute; 
+top: 4%;
+right: 28%;
+width: 200px;
+height: 200px;
+background-image: url(husky.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px;
+}
+#husky::before,
+#husky::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#husky::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#husky:hover::before
+{
+--scale:1;
+}
+#beagle{
+   position: absolute; 
+top: 4%;
+left: 27.5%;
+width: 200px;
+height: 200px;
+background-image: url(beagle.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px;
+}
+#beagle::before,
+#beagle::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#beagle::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#beagle:hover::before
+{
+--scale:1;
+}
+#golden{
+  position: absolute; 
+top: 20%;
+left: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(goldenn.png); 
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#golden::before,
+#golden::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#golden::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#golden:hover::before
+{
+--scale:1;
+}
+#bull{
+    position: absolute; 
+top: 20%;
+left: 27.5%;
+width: 200px;
+height: 200px;
+background-image: url(bulldog.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#bull::before,
+#bull::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#bull::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#bull:hover::before
+{
+--scale:1;
+}
+#rott{
+ position: absolute; 
+top: 20%;
+right: 28%;
+width: 200px;
+height: 200px;
+background-image: url(rott.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px;  
+}
+#rott::before,
+#rott::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#rott::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#rott:hover::before
+{
+--scale:1;
+}
+#cocker{
+position: absolute; 
+top: 20%;
+right: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(cocker.png);
+background-size: cover;  
+cursor: pointer;
+border-radius: 40px;
+}
+#cocker::before,
+#cocker::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#cocker::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#cocker:hover::before
+{
+--scale:1;
+}
+#york{
+  position: absolute; 
+top: 36%;
+left: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(yorkshire.png); 
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#york::before,
+#york::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#york::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#york:hover::before
+{
+--scale:1;
+}
+#pom{
+    position: absolute; 
+top:36%;
+left: 27.5%;
+width: 200px;
+height: 200px;
+background-image: url(pom.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#pom::before,
+#pom::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#pom::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#pom:hover::before
+{
+--scale:1;
+}
+#pug{
+ position: absolute; 
+top: 36%;
+right: 28%;
+width: 200px;
+height: 200px;
+background-image: url(pug.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px;  
+}
+#pug::before,
+#pug::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#pug::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#pug:hover::before
+{
+--scale:1;
+}
+#dober{
+position: absolute; 
+top: 36%;
+right: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(doberman.png);
+background-size: cover;  
+cursor: pointer;
+border-radius: 40px;
+}
+#dober::before,
+#dober::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#dober::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#dober:hover::before
+{
+--scale:1;
+}
+#dane{               
+  position: absolute; 
+top: 52%;
+left: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(greatdane.png); 
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#dane::before,
+#dane::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#dane::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#dane:hover::before
+{
+--scale:1;
+}
+#collie{
+    position: absolute; 
+top:52%;
+left: 27.5%;
+width: 200px;
+height: 200px;
+background-image: url(collie.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#collie::before,
+#collie::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#collie::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#collie:hover::before
+{
+--scale:1;
+}
+#inu{
+ position: absolute; 
+top: 52%;
+right: 28%;
+width: 200px;
+height: 200px;
+background-image: url(shibainu.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px;  
+}
+#inu::before,
+#inu::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#inu::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#inu:hover::before
+{
+--scale:1;
+}
+#dach{
+position: absolute; 
+top: 52%;
+right: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(dach.png);
+background-size: cover;  
+cursor: pointer;
+border-radius: 40px;
+}
+#dach::before,
+#dach::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#dach::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#dach:hover::before
+{
+--scale:1;
+}
+#poodle{               
+  position: absolute; 
+top: 68%;
+left: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(poodle.png); 
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#poodle::before,
+#poodle::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#poodle::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#poodle:hover::before
+{
+--scale:1;
+}
+#dalmation{
+    position: absolute; 
+top:68%;
+left: 27.5%;
+width: 200px;
+height: 200px;
+background-image: url(dalm.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#dalmation::before,
+#dalmation::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#dalmation::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#dalmation:hover::before
+{
+--scale:1;
+}
+#shar{
+ position: absolute; 
+top: 68%;
+right: 28%;
+width: 200px;
+height: 200px;
+background-image: url(sharpei.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px;  
+}
+#shar::before,
+#shar::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#shar::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#shar:hover::before
+{
+--scale:1;
+}
+#chow{
+position: absolute; 
+top: 68%;
+right: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(chow.png);
+background-size: cover;  
+cursor: pointer;
+border-radius: 40px;
+}
+#chow::before,
+#chow::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#chow::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#chow:hover::before
+{
+--scale:1;
+}
+#bernese{               
+  position: absolute; 
+top: 84%;
+left: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(bernese.png); 
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#bernese::before,
+#bernese::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#bernese::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#bernese:hover::before
+{
+--scale:1;
+}
+#belgian{
+    position: absolute; 
+top:84%;
+left: 27.5%;
+width: 200px;
+height: 200px;
+background-image: url(belgian.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px; 
+}
+#belgian::before,
+#belgian::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#belgian::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#belgian:hover::before
+{
+--scale:1;
+}
+#boxer{
+ position: absolute; 
+top: 84%;
+right: 28%;
+width: 200px;
+height: 200px;
+background-image: url(boxer.png);
+background-size: cover;
+cursor: pointer;
+border-radius: 40px;  
+}
+#boxer::before,
+#boxer::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#boxer::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#boxer:hover::before
+{
+--scale:1;
+}
+#engset{
+position: absolute; 
+top: 84%;
+right: 2.5%;
+width: 200px;
+height: 200px;
+background-image: url(engsetter.png);
+background-size: cover;  
+cursor: pointer;
+border-radius: 40px;
+}
+#engset::before,
+#engset::after{
+ --scale:0;
+  
+position:absolute;
+top:-.25rem;
+left: 50%;
+transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+transition: 150ms transform;
+transform-origin: bottom center;
+}
+#engset::before{
+content: attr(data-tooltip);
+color: white;
+padding: .5rem;
+width: max-content;
+background:black;
+border-radius:10px;
+}
+#engset:hover::before
+{
+--scale:1;
+ 
+ }
+ 
